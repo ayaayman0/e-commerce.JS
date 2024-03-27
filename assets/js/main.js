@@ -7,6 +7,17 @@
 /* Validate if constant exists */
 
 /*=============== IMAGE GALLERY ===============*/
+function imgGallery() {
+  const mainImg = document.querySelector('.details-img'),
+    smallImg = document.querySelectorAll('.details-small-img');
+  
+  smallImg.forEach((img) => {
+    img.addEventListener('click', function () { 
+      mainImg.src = this.src;
+    }); 
+  });
+}  
+  imgGallery();
 
 /*=============== SWIPER CATEGORIES ===============*/
 var swiperCategories = new Swiper(".categories-container", {
