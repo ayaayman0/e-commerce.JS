@@ -707,6 +707,7 @@ color: var(--title-color);
 font-family: var(--second-font);
 font-size: var(--small-font-size);
 font-weight: var(--weight-600);
+text-align: center;
 }
 .newsletter-form {
 display: flex;
@@ -1264,15 +1265,69 @@ font-size: var(--small-font-size);
 display: flex;
 align-items: center;
 column-gap: .625rem;
+cursor: pointer;
 }
 .account-tab.active-tab {
 background-color: var(--first-color); 
 color: var(--body-color);
 }
+.account-tab:not(:last-child) {  
+border-bottom: 1px solid var(--border-color-alt);
+}
+.tab-content:not(.active-tab) {
+display: none;
+}
+.tab_content {
+border: 1px solid var(--border-color-alt);
+}
+.tab-header {
+background-color: var(--container-color);
+border-bottom: 1px solid var(--border-color-alt); padding: 1rem;
+font-size: var(--small-font-size);
+}
+.tab-body {
+padding: 1rem;
+}
+.placed-order-table tr th {
+color: var(--title-color);
+text-align: left;
+}
+.placed-order-table tr th,
+.placed-order-table tr td {
+border: 1px solid var(--border-color-alt);
+padding: 0.5rem;
+font-size: var(--small-font-size);
+}
+.view-order,
+.edit {
+color: var(--first-color);
+}
+.address {
+font-style: normal;
+font-size: var(--small-font-size);
+line-height: 1.5rem;
+}
+.city {
+margin-bottom: 0.25rem;
+}
+.edit {
+font-size: var(--small-font-size);
+}
+
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 1400px) {
+  .container {
+  max-width: 1140px;
+  }
+  .products__container,
+  .showcase__container {
+  grid-template-columns: repeat(3, 1fr);
+  }
+  .accounts-container{
+    grid-template-columns: repeat(3, 9fr);
+  }
 }
 
 @media screen and (max-width: 1200px) {
