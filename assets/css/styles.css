@@ -153,7 +153,7 @@ table{
 .form {
 row-gap: 1rem;
 }
-.form__group {
+.form-group {
 grid-template-columns: repeat(2, 1fr);
 gap: 1rem;
 }
@@ -1164,8 +1164,78 @@ display: inline-flex;
 /*=============== WISHLIST ===============*/
 
 /*=============== CHECKOUT ===============*/
+.checkout-container {
+grid-template-columns: repeat(2, 1fr);
+}
+.checkout-group:nth-child(2) {
+border: 1px solid var(--border-color-alt);
+padding: 2rem;
+border-radius: 0.5rem;
+}
+.checkout-group.section-title {
+font-size: var(--large-font-size);
+}
+.checkout-title {
+font-size: var(--small-font-size);
+}
+.order-table tr th,
+.order-table tr td {
+border: 1px solid var(--border-color-alt);
+padding: .5rem;
+text-align: center;
+}
+.order-table tr th {
+color: var(--title-color);
+font-size: var(--small-font-size);
+}
+.order-img {
+width: 80px;
+}
+.table-quantity,
+.order-subtitle {
+font-size: var(--small-font-size);
+}
+.order-grand-total {
+color: var(--first-color);
+font-size: var(--large-font-size);
+font-weight: var(--weight-700);
+}
+.payment-methods {
+margin-block: 2.5rem 2.75rem;
+}
+.payment-title {
+margin-bottom: 1.5rem;
+}
+.payment-option {
+margin-bottom: 1rem;
+}
+.payment-input {
+accent-color: var(--first-color);
+}
+.payment-label {
+font-size: var(--small-font-size);
+}
 
 /*=============== COMPARE ===============*/
+.compare-table tr th,
+.compare-table tr td {
+padding: 0.5rem;
+border: 1px solid var(--border-color-alt);
+}
+.compare-table tr th {
+color: var(--text-color-light);
+font-size: var(--small-font-size);
+}
+.compare-table tr td {
+text-align: center;
+}
+.comapre-colors {
+justify-content: center;
+}
+.table-weight,
+.table-dimension {
+font-size: var(--small-font-size);
+}
 
 /*=============== LOGIN & REGISTER ===============*/
 .login-register-container {
@@ -1180,6 +1250,25 @@ border-radius: 0.5rem;
 }
 
 /*=============== ACCOUNTS ===============*/
+.accounts-container {
+grid-template-columns: 4fr 8fr;
+}
+.account-tabs {
+border: 1px solid var(--border-color-alt);
+border-radius: 0.25rem;
+}
+.account-tab {
+padding: 1rem 2rem;
+color: var(--title-color);
+font-size: var(--small-font-size);
+display: flex;
+align-items: center;
+column-gap: .625rem;
+}
+.account-tab.active-tab {
+background-color: var(--first-color); 
+color: var(--body-color);
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
