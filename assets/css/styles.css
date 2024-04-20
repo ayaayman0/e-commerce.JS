@@ -1525,13 +1525,6 @@ grid-template-columns: repeat(3, 1fr);
   .table tr th:nth-child(6),
   .table tr td:nth-child(6) {
     width: 100px;
-  }
-  .footer-title {  
-    margin-top: 0.25rem;  
-  }  
-  .footer-bottom{  
-    flex-direction: column;  
-    align-items: center;
   }  
 }
 
@@ -1552,13 +1545,6 @@ grid-template-columns: repeat(3, 1fr);
   }  
   .compare-table tr td {
     display: block;
-  }
-  .footer-title {  
-    margin-top: 0.25rem;  
-  }  
-  .footer-bottom{  
-    flex-direction: column;  
-    align-items: center;
   }
 }
 
